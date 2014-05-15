@@ -8,4 +8,21 @@ package playground;
  * To change this template use File | Settings | File Templates.
  */
 public class MyFirstJavaProgram {
+
+    public static void main(String args[]) {
+        int a=29;
+
+        if(a%5==0 && a%3==0){
+            System.out.println("FIZZBUZZ");
+        }
+        else if(a%5==0){
+            System.out.println("FIZZ");
+        }
+        else if(a%3==0){
+            System.out.println("BUZZ");
+        }
+        else{
+            System.out.println("check your input");
+        }
+    }
 }
