@@ -1,3 +1,5 @@
+package examples;
+
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -5,13 +7,14 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class ReadWriteExcelTest {
+public class ExcelDataTest {
 
     @Test
     public void readDataFromExcel() {
@@ -38,7 +41,7 @@ public class ReadWriteExcelTest {
 
     public void runTest(String strSearchString, String strPageTitle) {
         // Start a browser driver and navigate to Google
-        WebDriver driver = new HtmlUnitDriver();
+        WebDriver driver = new FirefoxDriver();
         driver.get("http://www.google.com");
 
         // Enter the search string and send it
