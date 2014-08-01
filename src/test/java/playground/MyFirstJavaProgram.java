@@ -10,7 +10,7 @@ package playground;
 public class MyFirstJavaProgram {
 
     public static void main(String args[]) {
-        int a=29;
+        int a=33;
 
         if(a%5==0 && a%3==0){
             System.out.println("FIZZBUZZ");

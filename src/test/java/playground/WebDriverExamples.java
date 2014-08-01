@@ -36,7 +36,7 @@ public class WebDriverExamples {
 
     @Before
     public void setup(){
-        driver = new HtmlUnitDriver();
+        driver = new FirefoxDriver();
         driver.get("http://travel.agileway.net");
     }
 
